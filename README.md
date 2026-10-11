@@ -37,5 +37,4 @@ app/src/main/
 3. Gradle sync edin, emulator/Android telefon seçib **Run** düyməsinə basın.
 4. Lokal unit testlər üçün: `./gradlew testDebugUnitTest` (Windows: `gradlew.bat testDebugUnitTest`).
 
-## Qeyd
-Bu layihə müəllimdən alınmış **A04-SimpleCalculator** tədris nümunəsinin icazə ilə yenidən işlənmiş versiyasıdır. Təkmilləşdirmələr, paket adı, struktur, UI və testlər `NamatNaghiyev` üçün uyğunlaşdırılıb. Orijinal nümunə `com.atilsamancioglu.simplecalculator` paket adından istifadə edirdi.
+
