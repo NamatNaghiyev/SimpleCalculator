@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/page_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_name"
+            android:textColor="@color/primary_text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/subtitle"
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/panel_background"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/firstNumberInput"
+                android:text="@string/first_number"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/firstNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/number_hint"
+                android:inputType="numberDecimal|numberSigned"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:labelFor="@id/secondNumberInput"
+                android:text="@string/second_number"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/secondNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/number_hint"
+                android:inputType="numberDecimal|numberSigned"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addButton"
+                style="@style/OperatorButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="+" />
+            <Button
+                android:id="@+id/subtractButton"
+                style="@style/OperatorButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="−" />
+            <Button
+                android:id="@+id/multiplyButton"
+                style="@style/OperatorButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="×" />
+            <Button
+                android:id="@+id/divideButton"
+                style="@style/OperatorButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="÷" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/panel_background"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/result_label"
+                android:textColor="@color/secondary_text" />
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="42dp"
+                android:text="@string/initial_result"
+                android:textColor="@color/primary_text"
+                android:textIsSelectable="true"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/clear"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

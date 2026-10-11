@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namət Calculator</string>
+    <string name="subtitle">İki ədəd daxil edin və əməliyyat seçin.</string>
+    <string name="first_number">Birinci ədəd</string>
+    <string name="second_number">İkinci ədəd</string>
+    <string name="number_hint">Məsələn: 12.5</string>
+    <string name="result_label">Nəticə</string>
+    <string name="initial_result">0</string>
+    <string name="clear">Təmizlə</string>
+</resources>
